@@ -70,7 +70,7 @@ class HomeActivity : AppCompatActivity() {
             Log.d("TAG",strUserAge)
             Log.d("TAG",strUserAddress)
             Log.d("TAG",selectedDate)
-            clearFileds()
+            clearFields()
         }
     }
 
@@ -109,7 +109,8 @@ class HomeActivity : AppCompatActivity() {
         return age
     }
 
-    private fun clearFileds(){
+    //For Clearing the data after saving it
+    private fun clearFields(){
         binding.editTextName.text?.clear()
         binding.editTextAge.text?.clear()
         binding.editTextAddress.text?.clear()
